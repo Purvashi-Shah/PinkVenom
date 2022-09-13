@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body { 
+background-image: url(bg.jpeg);
+background-repeat: no-repeat;
+background-size: 100%;
+background-attachment: fixed;
+}
+
+.tile1, .tile2, .tile3, .tile4, .tile5, .tile6, .tile7, .tile8, .tile9 {
+  display: table-cell;
+  width: 120px;
+  height: 120px;
+  border: 1px solid white;
+  background: url("meet.png"); 
+  cursor: pointer;
+}
+
+.tile1 {background-position: left top;}
+.tile2 {background-position: center top;}
+.tile3 {background-position: right top;}
+.tile4 {background-position: left center;}
+.tile5 {background-position: center center;}
+.tile6 {background-position: right center;}
+.tile7 {background-position: left bottom;}
+.tile8 {background-position: center bottom;}
+.tile9 {background: white; cursor: default;}
+center{
+    margin-top: 60px;
+}
+
+</style>
+<body>
+    
+<center><div id="table" style="display: table;">
+    <div id="row1" style="display: table-row;">
+       <div id="cell11" class="tile1" onClick="clickTile(1,1);"></div>
+       <div id="cell12" class="tile2" onClick="clickTile(1,2);"></div>
+       <div id="cell13" class="tile3" onClick="clickTile(1,3);"></div>
+    </div>
+    <div id="row2" style="display: table-row;">
+       <div id="cell21" class="tile4" onClick="clickTile(2,1);"></div>
+       <div id="cell22" class="tile5" onClick="clickTile(2,2);"></div>
+       <div id="cell23" class="tile6" onClick="clickTile(2,3);"></div>
+    </div>
+    <div id="row3" style="display: table-row;">
+       <div id="cell31" class="tile7" onClick="clickTile(3,1);"></div>
+       <div id="cell32" class="tile8" onClick="clickTile(3,2);"></div>
+       <div id="cell33" class="tile9" onClick="clickTile(3,3);"></div>
+    </div>
+ </div><br>
+   <button onClick="shuffle();">New Game</button>
+ </center>
+ <script src="puzzle.js"></script>
+ </body>
+</html>

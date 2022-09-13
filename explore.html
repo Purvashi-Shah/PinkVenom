@@ -1,0 +1,90 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@629&display=swap" rel="stylesheet">
+  </head>
+  <style>
+    * {
+  box-sizing: border-box;
+}
+h1{
+    color: antiquewhite;
+    font-family: 'Dancing Script', cursive;
+    font-size: 50px;
+}
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.header {
+  text-align: center;
+  padding: 2px;
+  background-image: linear-gradient(to right top, #560404, #44070d, #300a0f, #1e060b, #000000);
+  background-color: black;
+}
+
+#gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0 4px;
+  background-color: black;
+}
+
+#gallery img {
+  width: 25%;
+  height: 300px;
+  object-fit: cover;
+  margin-top: 8px;
+  padding: 0 4px;
+  border-radius: 10px;
+}
+
+@media (max-width: 800px) {
+  #gallery img {
+    width: 50%;
+  }
+}
+
+@media (max-width: 600px) {
+  #gallery img {
+    width: 100%;
+  }
+}
+body{
+    background-color: black;
+}
+
+  </style>
+  <body>
+    <div class="header">
+      <h1>Picture Perfect Moments </h1>
+    </div>
+    <div id="gallery">
+      <img src="https://i.pinimg.com/564x/bf/6d/57/bf6d57f044c44e8d7fd0d366f7a578f4.jpg"/>
+      <img src="https://i.pinimg.com/564x/00/97/f3/0097f39f4aea93619b661954c1959599.jpg"/>
+      <img src="https://i.pinimg.com/564x/09/54/17/095417e3f4fda479550126b7f95b2ecc.jpg"/>
+      <img src="https://i.pinimg.com/564x/90/9c/96/909c96b75bb995997cfc0b762563e623.jpg"/>
+      <img src="https://i.pinimg.com/564x/02/75/14/0275149b4415164596c0a60f721a553e.jpg"/>
+      <img src="https://i.pinimg.com/564x/15/c0/2b/15c02bbd96e61832b9ec308f3f756e72.jpg"/>
+      <img src="https://i.pinimg.com/564x/4b/3b/e4/4b3be4f13e9b3fdd31bb3d197a376a97.jpg"/>
+      <img src="https://i.pinimg.com/736x/be/73/ec/be73ec1fd08b741476e7370c31151228.jpg"/>
+      <img src="https://i.pinimg.com/564x/9a/73/6c/9a736c3cd236064f812dbba2a834ca37.jpg"/>
+      <img src="https://i.pinimg.com/564x/7f/0d/37/7f0d37e3d1ab694f8726f93208936835.jpg"/>
+      <img src="https://i.pinimg.com/564x/66/a1/5d/66a15da5ecc837346083f0cb03a00a23.jpg"/>
+      <img src="https://i.pinimg.com/564x/63/43/6f/63436f399c0c8e133d52ffbff38a3107.jpg"/>
+      <img src="https://i.pinimg.com/564x/c9/ec/1e/c9ec1e42ea7d4c4101673aee31891905.jpg"/>
+      <img src="https://i.pinimg.com/564x/c0/f9/46/c0f94660da82184ca1d6016b3cd1071d.jpg"/>
+      <img src="https://i.pinimg.com/564x/4f/5a/a2/4f5aa20c1f9a9e4db4381d3952faf57d.jpg"/>
+      <img src="https://i.pinimg.com/564x/13/db/31/13db3160fd5d03eb827ea6436cf416a9.jpg"/>
+    </div>
+  </body>
+</html>
